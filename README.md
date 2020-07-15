@@ -17,4 +17,21 @@ For robotware 7 and new lines of controllers, the codes should be updated using 
 4. Autofill signal search functionality to pinpoint one signal & identify its status from a collection of signals that could go way beyond 100s.
 
 
+-> How to use:
+1. Change the host ip appropriately for your use case (in RobStart.py, RobStop.py, and RestAPITestingSignals.py)
+host = 'http://127.0.0.1' for a robot on Robot Studio (Your local device); host = 'http://192.168.125.1' if the server computer is connected to the service port of a robot's controller
+
+2. Run RestAPIStart.py
+
+3. Disable the firewall on your server computer
+
+4. Check the IPv4 address of your server computer
+
+5. Remote controlling page should be accessible via IPv4 address:5000 (e.g., 10.131.12.92:5000)
+
+6. If you want to control the robot remotely using a mobile phone or iPad etc., connect its Wifi to the identical one your server computer is connected with.
+
+7. Go to Safari, Chrome, any web browser and type IPv4 address:5000 (e.g., 10.131.12.92:5000)
+
+
 It was a personal mini project utilizing Flask and Rest API on python.
